@@ -1,0 +1,35 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:enchanting_table"
+		},
+		"title":
+		{
+			"text": "Enchanter"
+		},
+		"description":
+		{
+			"text": "Enchant an item at an Enchanting Table"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria": {
+    	"enchanted_item": {
+      		"conditions": {},
+      		"trigger": "minecraft:enchanted_item"
+    	}
+  	},
+	
+	"requirements":
+	[
+		["enchanted_item"]
+	]
+
+}

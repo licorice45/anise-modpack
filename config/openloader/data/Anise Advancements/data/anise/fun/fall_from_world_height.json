@@ -1,0 +1,63 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:water_bucket"
+		},
+		"title":
+		{
+			"text": "Caves & Cliffs"
+		},
+		"description":
+		{
+			"text": "Free fall from the top of the world (build limit) to the bottom and survive"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"fall_from_world_height": {
+      "conditions": {
+        "distance": {
+          "y": {
+            "min": 379.0
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "position": {
+                  "y": {
+                    "max": -59.0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "start_position": {
+          "position": {
+            "y": {
+              "min": 319.0
+            }
+          }
+        }
+      },
+      "trigger": "minecraft:fall_from_height"
+    }
+	},
+	
+	"requirements":
+	[
+		["fall_from_world_height"]
+	]
+}

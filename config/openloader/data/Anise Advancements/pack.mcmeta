@@ -1,0 +1,30 @@
+{
+	"pack": {
+		"description": "Advancements for Anise Edition",
+		"pack_format": 18
+	},
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            },
+			{
+                "namespace": "alexsmobs",
+                "path": "advancements/.*"
+            },
+			{
+                "namespace": "farmersdelight",
+                "path": "advancements/.*"
+            },
+			{
+                "namespace": "lootr",
+                "path": "advancements/.*"
+            },
+			{
+                "namespace": "betterdungeons",
+                "path": "advancements/.*"
+            }
+        ]
+    }
+}

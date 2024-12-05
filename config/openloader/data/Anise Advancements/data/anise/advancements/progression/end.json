@@ -1,0 +1,44 @@
+{
+	"parent": "anise:progression/stronghold",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:end_portal_frame"
+		},
+		"title":
+		{
+			"text": "The End?"
+		},
+		"description":
+		{
+			"text": "Enter the End Portal"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"end":
+		{
+			"trigger": "minecraft:location",
+			"conditions": 
+			{
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_end"
+					}
+				}
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["end"]
+	]
+
+}

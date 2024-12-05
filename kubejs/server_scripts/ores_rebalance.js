@@ -1,0 +1,27 @@
+ServerEvents.tags('block', event => {
+	event.get('minecraft:needs_stone_tool')
+		.remove('minecraft:copper_ore')
+		.remove('minecraft:deepslate_copper_ore')
+		.remove('spelunkery:andesite_copper_ore')
+		.remove('spelunkery:diorite_copper_ore')
+		.remove('spelunkery:granite_copper_ore')
+		.remove('spelunkery:tuff_copper_ore')
+		
+		.add('minecraft:gold_ore')
+		.add('minecraft:deepslate_gold_ore')
+		.add('spelunkery:andesite_gold_ore')
+		.add('spelunkery:diorite_gold_ore')
+		.add('spelunkery:granite_gold_ore')
+		.add('spelunkery:tuff_gold_ore')
+		.add('minecraft:nether_gold_ore')
+		
+		
+	event.get('minecraft:needs_iron_tool')
+		.remove('minecraft:gold_ore')
+		.remove('minecraft:deepslate_gold_ore')
+		.remove('spelunkery:andesite_gold_ore')
+		.remove('spelunkery:diorite_gold_ore')
+		.remove('spelunkery:granite_gold_ore')
+		.remove('spelunkery:tuff_gold_ore')
+		.remove('minecraft:nether_gold_ore')
+})

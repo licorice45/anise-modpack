@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/polished_crystal",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:obsidian"
+		},
+		"title":
+		{
+			"text": "Ice Bucket Challenge"
+		},
+		"description":
+		{
+			"text": "Obtain a block of Obsidian"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"obsidian":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:obsidian"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["obsidian"]
+	]
+
+}

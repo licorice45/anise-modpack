@@ -1,0 +1,46 @@
+{
+	"parent": "anise:progression/end",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:dragon_head"
+		},
+		"title":
+		{
+			"text": "The End."
+		},
+		"description":
+		{
+			"text": "Free the End from the Ender Dragon"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"killed_dragon": {
+      	"conditions": {
+        	"entity": [
+         	 {
+            	"condition": "minecraft:entity_properties",
+            	"entity": "this",
+            	"predicate": {
+              	"type": "minecraft:ender_dragon"
+            	}
+          	}
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+	},
+	
+	"requirements":
+	[
+		["killed_dragon"]
+	]
+
+}

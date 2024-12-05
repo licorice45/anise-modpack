@@ -1,0 +1,37 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:wheat"
+		},
+		"title":
+		{
+			"text": "The Parrots and the Bats"
+		},
+		"description":
+		{
+			"text": "Breed two animals together"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"furnace":
+		{
+			"conditions": {},
+      		"trigger": "minecraft:bred_animals"
+		}
+	},
+	
+	"requirements":
+	[
+		["furnace"]
+	]
+
+}

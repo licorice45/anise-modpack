@@ -1,0 +1,45 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "spelunkery:salt"
+		},
+		"title":
+		{
+			"text": "Salt Splash"
+		},
+		"description":
+		{
+			"selector": "Special technique where you throw salt at the ground making enemy unable to pass"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"splash":
+		{
+      		"trigger": "minecraft:item_used_on_block",
+      		"conditions": {
+      			"location": [
+        	 		{
+        	    		"condition": "minecraft:match_tool",
+        			    "predicate": {
+      				"items": ["spelunkery:salt"]
+      			}
+      		}
+      		]}
+		}
+	},
+	
+	"requirements":
+	[
+		["splash"]
+	]
+
+}

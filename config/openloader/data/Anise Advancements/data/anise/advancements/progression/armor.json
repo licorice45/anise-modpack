@@ -1,0 +1,84 @@
+{
+	"parent": "anise:progression/iron_ingot",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:iron_chestplate"
+		},
+		"title":
+		{
+			"text": "Suit Up"
+		},
+		"description":
+		{
+			"text": "Protect yourself with a piece of iron armor"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"helmet":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:iron_helmet"]
+				 }
+				]
+			}
+		},
+		"chestplate":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:iron_chestplate"]
+				 }
+				]
+			}
+		},
+		"leggings":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:iron_leggings"]
+				 }
+				]
+			}
+		},
+		"boots":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:iron_boots"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["helmet","chestplate","leggings","boots"]
+	]
+
+}

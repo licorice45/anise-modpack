@@ -1,0 +1,97 @@
+{
+	"parent": "anise:progression/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:wooden_pickaxe"
+		},
+		"title":
+		{
+			"text": "Starter Kit"
+		},
+		"description":
+		{
+			"text": "Craft your first tool using sticks and planks"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"pickaxe":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:wooden_pickaxe"]
+				 }
+				]
+			}
+		},
+		"axe":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:wooden_axe"]
+				 }
+				]
+			}
+		},
+		"hoe":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:wooden_hoe"]
+				 }
+				]
+			}
+		},
+		"shovel":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:wooden_shovel"]
+				 }
+				]
+			}
+		},
+		"sword":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:wooden_sword"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["pickaxe", "axe", "hoe", "shovel", "sword"]
+	]
+
+}

@@ -1,0 +1,84 @@
+{
+	"parent": "anise:progression/iron_ingot",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:diamond"
+		},
+		"title":
+		{
+			"text": "Crystal Clear"
+		},
+		"description":
+		{
+			"text": "Polish a rough crystal with sandpaper or grindstone"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"emerald":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:emerald"]
+				 }
+				]
+			}
+		},
+		"diamond":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:diamond"]
+				 }
+				]
+			}
+		},
+		"cinnabar":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["spelunkery:cinnabar"]
+				 }
+				]
+			}
+		},
+		"lapis":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:lapis_lazuli"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["emerald", "diamond", "cinnabar", "lapis"]
+	]
+
+}

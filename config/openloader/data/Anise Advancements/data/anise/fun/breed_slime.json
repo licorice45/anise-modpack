@@ -1,0 +1,40 @@
+{
+	"parent": "anise:fun/breed_animal",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:slime_block"
+		},
+		"title":
+		{
+			"text": "Slime Rancher"
+		},
+		"description":
+		{
+			"text": "Feed a slime with it's favourite food"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"feed":
+		{
+      		"trigger": "minecraft:player_interacted_with_entity",
+      		"conditions": {
+      			"item": {"tag": "spelunkery:slime_foods"},
+      			"entity": {"type": "minecraft:slime"}
+      		}
+		}
+	},
+	
+	"requirements":
+	[
+		["feed"]
+	]
+
+}

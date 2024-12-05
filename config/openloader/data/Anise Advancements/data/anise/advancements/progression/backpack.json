@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/chest",
+	"display":
+	{
+		"icon":
+		{
+			"item": "sophisticatedbackpacks:backpack"
+		},
+		"title":
+		{
+			"text": "Mobile Storage"
+		},
+		"description":
+		{
+			"text": "Craft a backpack"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"backpack":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["sophisticatedbackpacks:backpack"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["backpack"]
+	]
+
+}

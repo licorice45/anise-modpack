@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/tools",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:smithing_table"
+		},
+		"title":
+		{
+			"text": "I Am Smith"
+		},
+		"description":
+		{
+			"text": "Craft a smithing table"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"smithing_table":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:smithing_table"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["smithing_table"]
+	]
+
+}

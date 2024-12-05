@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/backpack",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:shulker_box"
+		},
+		"title":
+		{
+			"text": "Alien Storage"
+		},
+		"description":
+		{
+			"text": "Craft a shulker box"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"shulker_box":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:shulker_box"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["shulker_box"]
+	]
+
+}

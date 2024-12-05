@@ -1,0 +1,44 @@
+{
+	"display":
+	{
+		"icon":
+		{
+			"item": "waystones:warp_stone"
+		},
+		"title":
+		{
+			"text": "Fun"
+		},
+		"description":
+		{
+			"text": "Side challenges that can be completed for fun"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false,
+		"background": "minecraft:textures/block/amethyst_block.png"
+	},
+	
+	"criteria":
+	{
+		"exist":
+		{
+			"trigger": "minecraft:location",
+			"conditions": 
+			{
+				"player": {
+					"location": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["exist"]
+	]
+
+}

@@ -1,0 +1,44 @@
+{
+	"parent": "anise:progression/obsidian",
+	"display":
+	{
+		"icon":
+		{
+			"item": "spelunkery:portal_fluid_bottle"
+		},
+		"title":
+		{
+			"text": "We Need to Go Deeper"
+		},
+		"description":
+		{
+			"text": "Build, light and enter a Nether Portal"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"nether":
+		{
+			"trigger": "minecraft:location",
+			"conditions": 
+			{
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_nether"
+					}
+				}
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["nether"]
+	]
+
+}

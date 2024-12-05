@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/smithing_table",
+	"display":
+	{
+		"icon":
+		{
+			"item": "kubejs:common_upgrade_smithing_template"
+		},
+		"title":
+		{
+			"text": "Getting an Upgrade"
+		},
+		"description":
+		{
+			"text": "Craft a Common Upgrade Smithing Template using canvas and pebbles"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"cust":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["kubejs:common_upgrade_smithing_template"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["cust"]
+	]
+
+}

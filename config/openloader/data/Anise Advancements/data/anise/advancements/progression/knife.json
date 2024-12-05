@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/tools",
+	"display":
+	{
+		"icon":
+		{
+			"item": "farmersdelight:flint_knife"
+		},
+		"title":
+		{
+			"text": "Hunt and Gather"
+		},
+		"description":
+		{
+			"text": "Craft a knife to collect straw from grass and extra loot from animals"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"knife":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["farmersdelight:flint_knife"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["knife"]
+	]
+
+}

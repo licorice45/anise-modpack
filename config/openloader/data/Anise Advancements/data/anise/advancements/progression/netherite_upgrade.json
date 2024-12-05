@@ -1,0 +1,45 @@
+{
+	"parent": "anise:progression/upgrade",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:netherite_upgrade_smithing_template"
+		},
+		"title":
+		{
+			"text": "Getting THE Upgrade"
+		},
+		"description":
+		{
+			"text": "Find the Netherite Upgrade Smithing Template"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"nust":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["minecraft:netherite_upgrade_smithing_template"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["nust"]
+	]
+
+}

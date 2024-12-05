@@ -1,0 +1,36 @@
+{
+	"parent": "anise:fun/enchant",
+	"display":
+	{
+		"icon":
+		{
+			"item": "quark:ancient_tome"
+		},
+		"title":
+		{
+			"text": "Overdrive"
+		},
+		"description":
+		{
+			"text": "Overlevel an enchantment"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"overlevel":
+		{
+      		"trigger": "quark:overlevel"
+		}
+	},
+	
+	"requirements":
+	[
+		["overlevel"]
+	]
+
+}
