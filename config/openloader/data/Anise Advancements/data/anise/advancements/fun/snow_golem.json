@@ -1,0 +1,42 @@
+{
+	"parent": "anise:fun/iron_golem",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:snowball"
+		},
+		"title":
+		{
+			"text": "Aeon Hee-ho"
+		},
+		"description":
+		{
+			"text": "Summon a Snow Golem"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	
+	"criteria":
+	{
+		"overlevel":
+		{
+      		"trigger": "minecraft:summoned_entity",
+      		"conditions": {
+      			"entity":
+      			{
+      				"type": "minecraft:snow_golem"
+      			}
+      		}
+		}
+	},
+	
+	"requirements":
+	[
+		["overlevel"]
+	]
+
+}

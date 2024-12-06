@@ -1,0 +1,45 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:music_disc_ward"
+		},
+		"title":
+		{
+			"text": "Neon Mixtape"
+		},
+		"description":
+		{
+			"text": "Find a music disc"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"disc":
+		{
+      		"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"tag":"minecraft:music_discs"
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["disc"]
+	]
+
+}

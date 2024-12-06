@@ -1,0 +1,42 @@
+{
+	"parent": "anise:fun/iron_golem",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"title":
+		{
+			"text": "When all crumbles"
+		},
+		"description":
+		{
+			"text": "Summon a destroyer, the Wither"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	
+	"criteria":
+	{
+		"overlevel":
+		{
+      		"trigger": "minecraft:summoned_entity",
+      		"conditions": {
+      			"entity":
+      			{
+      				"type": "minecraft:wither"
+      			}
+      		}
+		}
+	},
+	
+	"requirements":
+	[
+		["overlevel"]
+	]
+
+}

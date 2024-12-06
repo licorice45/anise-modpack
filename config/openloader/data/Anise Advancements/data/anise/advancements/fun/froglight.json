@@ -1,0 +1,48 @@
+{
+	"parent": "anise:fun/breed_slime",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:ochre_froglight"
+		},
+		"title":
+		{
+			"text": "With Our Powers Combined!"
+		},
+		"description":
+		{
+			"text": "Have all Froglights in your inventory"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"froglights": {
+      		"trigger": "minecraft:inventory_changed",
+      		"conditions": {
+        		"items": [
+          		{
+            		"items": ["minecraft:ochre_froglight"]
+ 		        },
+        		{
+           			"items": ["minecraft:pearlescent_froglight"]
+          		},
+          		{
+            		"items": ["minecraft:verdant_froglight"]
+          		}
+        	]
+      		}
+    	}
+	},
+	
+	"requirements":
+	[
+		["froglights"]
+	]
+
+}

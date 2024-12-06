@@ -1,0 +1,42 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "minecraft:carved_pumpkin"
+		},
+		"title":
+		{
+			"text": "Aeon Hero"
+		},
+		"description":
+		{
+			"text": "Summon a protector, the Iron Golem"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"overlevel":
+		{
+      		"trigger": "minecraft:summoned_entity",
+      		"conditions": {
+      			"entity":
+      			{
+      				"type": "minecraft:iron_golem"
+      			}
+      		}
+		}
+	},
+	
+	"requirements":
+	[
+		["overlevel"]
+	]
+
+}

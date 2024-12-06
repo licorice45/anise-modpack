@@ -1,0 +1,45 @@
+{
+	"parent": "anise:fun/root",
+	"display":
+	{
+		"icon":
+		{
+			"item": "waystones:waystone"
+		},
+		"title":
+		{
+			"text": "Magical Journey"
+		},
+		"description":
+		{
+			"text": "Craft a waystone using stone bricks, obsidian and a warp stone"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	
+	"criteria":
+	{
+		"waystone":
+		{
+			"trigger": "minecraft:inventory_changed",
+			"conditions": 
+			{
+				"items": 
+				[
+				 {
+				 	"items": ["waystones:waystone"]
+				 }
+				]
+			}
+		}
+	},
+	
+	"requirements":
+	[
+		["waystone"]
+	]
+
+}
