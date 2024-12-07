@@ -11,7 +11,6 @@
 - [KubeJS](https://modrinth.com/mod/kubejs)
 - [Mod Checker Reworked](https://modrinth.com/mod/mod-checker-reworked)
 - [Open Loader](https://modrinth.com/mod/open-loader)
-- [You Shall Not Spawn](https://modrinth.com/mod/you-shall-not-spawn)
 
 ## Content
 - [Autumnity](https://modrinth.com/mod/autumnity)
@@ -30,6 +29,7 @@
 - [Berry Good](https://modrinth.com/mod/berry-good)
 - [Better Third Person](https://modrinth.com/mod/better-third-person)
 - [Enchantery](https://modrinth.com/mod/enchantery)
+- [Fog](https://modrinth.com/mod/fog)
 - [Leaves Be Gone](https://modrinth.com/mod/leaves-be-gone)
 - [Soul Fire'd](https://modrinth.com/mod/soul-fire-d)
 - [Snow! Real Magic!](https://modrinth.com/mod/snow-real-magic)
@@ -99,6 +99,7 @@
 - [Konkrete](https://modrinth.com/mod/konkrete)
 - [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge)
 - [Melody](https://modrinth.com/mod/melody)
+- [Mineblock's Repeated Utilities](https://modrinth.com/mod/mru)
 - [Moonlight Lib](https://modrinth.com/mod/moonlight)
 - [Necronomicon](https://modrinth.com/mod/necronomicon)
 - [OctoLib](https://modrinth.com/mod/octo-lib)
@@ -110,6 +111,7 @@
 - [Sinytra Connector](https://modrinth.com/mod/connector)
 - [Sophisticated Core](https://modrinth.com/mod/sophisticated-core)
 - [SuperMartijn642's Config Lib](https://modrinth.com/mod/supermartijn642s-config-lib)
+- [YetAnotherConfigLib](https://modrinth.com/mod/yacl)
 - [YUNG's API](https://modrinth.com/mod/yungs-api)
 - [Zeta](https://modrinth.com/mod/zeta)
 
