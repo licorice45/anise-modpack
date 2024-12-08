@@ -1,0 +1,14 @@
+[
+	{
+		"mob": "minecraft:skeleton",
+		"when": "finalize",
+		"result": "default",
+		"healthset": 10
+	},
+	{
+		"mob": ["minecraft:zombie","minecraft:zombie_villager","minecraft:husk","minecraft:drowned"],
+		"when": "finalize",
+		"result": "default",
+		"damagemultiply": 2
+	}
+]

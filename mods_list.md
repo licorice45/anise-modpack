@@ -7,6 +7,7 @@
 
 ## Modpack Customization
 - [FancyMenu](https://modrinth.com/mod/fancymenu)
+- [In Control!](https://modrinth.com/mod/in-control)
 - [Item Obliterator](https://modrinth.com/mod/item-obliterator)
 - [KubeJS](https://modrinth.com/mod/kubejs)
 - [Mod Checker Reworked](https://modrinth.com/mod/mod-checker-reworked)
@@ -64,6 +65,7 @@
 - [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered)
 
 ## Optimization / Optifine / Fixes
+- [AttributeFix](https://modrinth.com/mod/attributefix)
 - [Cull Less Leaves](https://modrinth.com/mod/cull-less-leaves-reforged)
 - [Embeddium](https://modrinth.com/mod/embeddium)
 - [Entity Model Features](https://modrinth.com/mod/entity-model-features)

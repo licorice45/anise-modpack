@@ -14,6 +14,12 @@ ServerEvents.recipes(event => {
 		{A: '#spelunkery:pebbles', C: 'farmersdelight:canvas'}
 	)
 	
+	event.shaped(
+		Item.of('kubejs:common_upgrade_smithing_template'),
+		['AAA', 'ACA', 'AAA'],
+		{A: '#spelunkery:pebbles', C: 'minecraft:leather'}
+	)
+	
 	event.remove({ output: 'minecraft:stone_shovel' })
 	event.remove({ output: 'minecraft:stone_pickaxe' })
 	event.remove({ output: 'minecraft:stone_axe' })
