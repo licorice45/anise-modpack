@@ -119,4 +119,13 @@ ServerEvents.recipes(event => {
 	event.smithing('minecraft:diamond_leggings', 'kubejs:common_upgrade_smithing_template', 'minecraft:golden_leggings', 'minecraft:diamond')
 	event.smithing('minecraft:diamond_boots', 'kubejs:common_upgrade_smithing_template', 'minecraft:golden_boots', 'minecraft:diamond')
 	
+	
+	event.remove({ output: 'farmersdelight:iron_knife' })
+	event.remove({ output: 'farmersdelight:golden_knife' })
+	event.remove({ output: 'farmersdelight:diamond_knife' })
+	
+	event.smithing('farmersdelight:iron_knife', 'kubejs:common_upgrade_smithing_template', 'farmersdelight:flint_knife', 'minecraft:iron_ingot')
+	event.smithing('farmersdelight:golden_knife', 'kubejs:common_upgrade_smithing_template', 'farmersdelight:flint_knife', 'minecraft:gold_ingot')
+	event.smithing('farmersdelight:diamond_knife', 'kubejs:common_upgrade_smithing_template', 'farmersdelight:iron_knife', 'minecraft:diamond')
+	event.smithing('farmersdelight:diamond_knife', 'kubejs:common_upgrade_smithing_template', 'farmersdelight:golden_knife', 'minecraft:diamond')
 })

@@ -1,14 +1,15 @@
 [
 	{
-		"mob": "minecraft:skeleton",
+		"mob": ["minecraft:skeleton", "minecraft:stray"],
 		"when": "finalize",
 		"result": "default",
-		"healthset": 10
+		"healthset": 10,
+		"dimension": "minecraft:overworld"
 	},
 	{
 		"mob": ["minecraft:zombie","minecraft:zombie_villager","minecraft:husk","minecraft:drowned"],
 		"when": "finalize",
 		"result": "default",
-		"damagemultiply": 2
+		"damagemultiply": 1.5
 	}
 ]
